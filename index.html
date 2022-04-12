@@ -34,7 +34,7 @@
         <div class="content" id="simpsons"></div>
       </div>
     </section>
-    <button id ="change-quote">New Simpson Quote</button>
+    <button id ="change-quote" onClick="window.location.reload();">New Simpson Quote</button>
 
     <!-- We need to load axios first! -->
     <script
@@ -95,13 +95,20 @@
 
       getSimpsons();
 
-      const simpsonButton = document.querySelector('#change-quote');
+      // const simpsonButton = document.querySelector('#change-quote');
 
-      const changeQuote = () => {
-        simpsonButton.addEventListener("click", event){
-          
-        }
-      }
+      // const refreshPage = () => {
+      //   window.location.reload();
+      // }
+
+      // const changeQuote = () => {
+      //   simpsonButton.addEventListener("click", refreshPage())
+      // }
+
+      // const changeQuote = () => {
+      //   simpsonButton.addEventListener("click", function (event){
+      //     event.target.refreshPage();
+      //   })}
     </script>
   </body>
 </html>
